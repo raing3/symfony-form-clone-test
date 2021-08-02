@@ -1,0 +1,27 @@
+{
+    "name": "raing3/symfony-form-clone-test",
+    "authors": [
+        {
+            "name": "Richard Ainger",
+            "email": "richard.ainger@neto.com.au"
+        }
+    ],
+    "require": {
+        "symfony/form": "dev-topic/resize_collection_clone_entry as 5.3",
+        "symfony/dependency-injection": "^5.3",
+        "symfony/config": "^5.3",
+        "symfony/framework-bundle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SymfonyFormCloneTest\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "name": "symfony/form",
+            "type": "vcs",
+            "url": "git@github.com:raing3/form.git"
+        }
+    ]
+}
