@@ -27,21 +27,25 @@ benchmark($formFactory, ['clone_entry_instance' => false], 5000);
 Environment: Macbook of some kind with PHP 7.3.
 
 ```
+# proposed updated flow
 # clone_entry_instance = true, 5000 children
 ^ "Time (sec): 20.07727098465"
 ^ "After memory usage (MB): 104"
 ^ "Memory diff (MB): 94"
 
+# current symfony/form 5.3 flow
 # clone_entry_instance = false, 5000 children
 ^ "Time (sec): 43.438263893127"
 ^ "After memory usage (MB): 678"
 ^ "Memory diff (MB): 668"
 
+# proposed updated flow
 # clone_entry_instance = true, 10 children
 ^ "Time (sec): 0.054184913635254"
 ^ "After memory usage (MB): 6"
 ^ "Memory diff (MB): 0"
 
+# current symfony/form 5.3 flow
 # clone_entry_instance = false, 10 children
 ^ "Time (sec): 0.083252906799316"
 ^ "After memory usage (MB): 8"
